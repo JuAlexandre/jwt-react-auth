@@ -13,10 +13,7 @@ class Login extends React.Component {
 
     componentWillMount() {
         if (Auth.loggedIn()) {
-            console.log('You are already logged');
             this.props.history.replace('/');
-        } else {
-            console.log('You\'re not logged');
         }
     }
 
